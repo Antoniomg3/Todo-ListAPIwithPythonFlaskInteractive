@@ -26,8 +26,8 @@ def test_pipfile_exists():
 
 @pytest.mark.it("Make sure to declare the function hello_world with the @app.route decorator")
 def test_add_function():
-    from src.app import hello_world
-    assert callable(hello_world)
+    from src.app import hello
+    assert callable(hello)
 
 @pytest.mark.it("Make sure to add this decorator above the function hello_world: @app.route('/todos', methods=['GET'])")
 def test_declare_variable2():
